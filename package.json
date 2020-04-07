@@ -1,0 +1,30 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Projeto para aplicar os conceitos de teste e TDD com o node",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --ignore test",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "keywords": [],
+  "author": "Marcos Santos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.13",
+    "pg": "^8.0.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
