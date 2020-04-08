@@ -42,7 +42,7 @@ describe('Authentication', () => {
   })
 
   // executa alguma coisa depois que termina de executar todos os testes
-  beforeAll(async () => {
+  afterAll(async () => {
     await app.db.migrate.rollback()
   })
 })
